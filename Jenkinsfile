@@ -5,7 +5,7 @@ pipeline{
         stage('Version Control System'){
             steps{
                 git url: 'https://github.com/Sagautam/StudentCoursesRestAPI.git',
-                branch: 'develop'
+                branch: 'sprint1_release'
             }
         }
         stage('Build Docker Image'){
