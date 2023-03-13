@@ -1,6 +1,6 @@
 pipeline{
     agent{ label 'SG_Jenkins_Docker' }
-    triggers { pollSCM ('* * * * *') }
+    triggers { pollSCM ('* 23 * * 1-5') }
     stages{
         stage('Version Control System'){
             steps{
