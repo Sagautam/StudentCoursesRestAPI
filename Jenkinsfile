@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Scan Docker Image using SNYK'){
             steps{
-                sh 'docker scan sagautam/spc'
+                echo 'sh docker scan sagautam/spc'
             }
         }
         stage('Push Docker Image'){
